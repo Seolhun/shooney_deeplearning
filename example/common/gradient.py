@@ -33,7 +33,7 @@ def numerical_gradient_2d(f, X):
 
 def numerical_gradient(f, x):
     h = 1e-4 # 0.0001
-    grad = np.zeros_like(x)
+    grad = np.zeros_like(x) # x와 형상이 같은 배열을 생성
     
     it = np.nditer(x, flags=['multi_index'], op_flags=['readwrite'])
     while not it.finished:
